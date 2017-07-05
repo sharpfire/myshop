@@ -27,10 +27,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# 添加的这个键将会用于我们的会话中来储存购物车。
+CART_SESSION_ID = 'cart'
+
 
 # Application definition
 
 INSTALLED_APPS = [
+    'cart',
     'sorl.thumbnail',
     'shop',
     'django.contrib.admin',
